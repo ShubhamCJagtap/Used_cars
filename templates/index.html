@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shubham Jagtap - Price Prediction</title>
+    <meta name="description" content="Responsive Bootstrap Personal Template" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Shreethemes" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css">
+    <!-- Magnificpopup Css -->
+    <link rel="stylesheet" type="text/css" href="/static/css/magnific-popup.css">
+    <!-- Icons -->
+    <link href="/static/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <!--Slider-->
+    <link rel="stylesheet" href="/static/css/owl.carousel.css" />
+    <link rel="stylesheet" href="/static/css/owl.theme.css" />
+    <link rel="stylesheet" href="/static/css/owl.transitions.css" />
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+</head>
+
+<body>
+
+    <div class="sidenav shadow bg-white">
+        <div class="text-center logo-border border-bottom pt-0 pt-lg-5 pb-0 pb-lg-5">
+            <div class="d-none d-lg-inline-block">
+                <a class="logo scrollbtn" href="#home">
+                    <img src="/static/logo.png" height="18" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-custom bg-white text-white sticky">
+            <div class="container">
+                <a class="logo text-dark d-inline-block d-lg-none scrollbtn" href="#home">Shubham Jagtap<span class="text-primary"></span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				        <span class="mdi mdi-menu"></span>
+				    </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav flex-column">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#intro">Application</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#credit">Tech Stack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#structure">EDA</a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link" href="#support">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#changelog">Changelog</a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR END-->
+
+        <div class="bottom-social social-icon text-center d-none d-lg-inline-block">
+            <ul class="list-unstyled icon">
+                <li class="list-inline-item"><a href="https://dribbble.com/shreethemes" target="_blank"><i class="mdi mdi-dribbble"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/shreethemes/" target="_blank"><i class="mdi mdi-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/shreethemes/" target="_blank"><i class="mdi mdi-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="https://twitter.com/shreethemes" target="_blank"><i class="mdi mdi-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="mailto:shreethemes@gmail.com"><i class="mdi mdi-email-outline" title="email"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main shadow bg-white">
+
+        <!-- Main Title Start -->
+        <section class="py-5 mt-lg-0 mt-5 bg-primary" id="home">
+            <div class="container mt-lg-0 mt-2">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h3 class="text-white font-weight-bold">Used Cars price Prediction</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Main Title End -->
+
+        <!-- Application Start -->
+        <section class="section" id="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title mb-4">
+                            <h4 class="title">Application</h4>
+                        </div>
+                        <br><br>
+                        <form action="/" method="POST" class="needs-validation" novalidate>
+                            <div class="form-row">
+                                <!--First Line-->
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip06">Made In year</label>
+                                    <select class="custom-select" id="validationTooltip06" name="year">
+										<option selected>Select Year</option>
+										<option value="2022">2022</option>
+										<option value="2021">2021</option>
+										<option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+									  </select>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip01">Running in KM (upto 5,00,000)</label>
+                                    <input type="text" name="Running_km" class="form-control" id="validationTooltip01" placeholder="eg. 50000" value="" required>
+                                    <div class="valid-tooltip">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip02">Mileage in Km/ltr (1-30)</label>
+                                    <input type="text" name="mileage" class="form-control" id="validationTooltip02" placeholder="eg. 18" value="" required>
+                                    <div class="valid-tooltip">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip02">Engine in cc (800-4000)</label>
+                                    <input type="text" name='engine' class="form-control" id="validationTooltip02" placeholder="eg. 1200" value="" required>
+                                    <div class="valid-tooltip">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <!--First Line End-->
+                            </div>
+                            <!--Second Line -->
+                            <div class="form-row">
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip06">Fuel Type</label>
+                                    <select class="custom-select" id="validationTooltip06" name="Fuel_type">
+										<option selected>Select Fuel Type</option>
+										<option value="Petrol+">Petrol [+CNG/LPG]</option>
+										<option value="Diesel">Diesel</option>
+									  </select>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip06">Number Of Owners</label>
+                                    <select class="custom-select" id="validationTooltip06" name="owners">
+										<option selected>Select No. Of Owners</option>
+										<option value="First">First</option>
+										<option value="Second+">Second or Third +</option>
+									  </select>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip06">Insurance</label>
+                                    <select class="custom-select" id="validationTooltip06" name="Insurance">
+										<option selected>Select Insurance type</option>
+										<option value="Comprehensive">Comprehensive</option>
+										<option value="Third Party">Third Party</option>
+									  </select>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip06">Turbocharged</label>
+                                    <select class="custom-select" id="validationTooltip06" name="Turbo">
+										<option selected>Please Select</option>
+										<option value="Yes">Yes</option>
+										<option value="No">No</option>
+									  </select>
+                                </div>
+                                <!--Second line end-->
+
+                            </div>
+                            <!--Third Line -->
+                            <div class="form-row">
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip06">Seat Rows</label>
+                                    <select class="custom-select" id="validationTooltip06" name="Seat_rows">
+										<option selected>Select Seat Rows</option>
+										<option value="2">2  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [&nbsp;&nbsp; 4&nbsp; /&nbsp; 5 &nbsp;&nbsp;Passengers]</option>
+										<option value="3">3  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [&nbsp;&nbsp; 6&nbsp; /&nbsp; 7&nbsp; /&nbsp; 8 &nbsp;&nbsp;Passengers]</option>
+									  </select>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip06">Brake Type</label>
+                                    <select class="custom-select" id="validationTooltip06" name="Brake_type">
+										<option selected>Select Brake type</option>
+										<option value="Drum">Drum</option>
+										<option value="Disc">Disc</option>
+									  </select>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip06">Transmission</label>
+                                    <select class="custom-select" id="validationTooltip06" name="Transmission">
+										<option selected>Select Transsmission Type</option>
+										<option value="Automatic">Automatic</option>
+										<option value="Manual">Manual</option>
+									  </select>
+                                </div>
+                                <!--Third line end-->
+                            </div>
+
+                            <br>
+                            <h5>Please select required features</h5>
+                            <div class="form-row">
+                                <div class="col-md-3 mb-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" name="Cruise_control">
+                                        <label class="custom-control-label" for="customCheck1">Cruise Coontrol</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2" name="ABS">
+                                        <label class="custom-control-label" for="customCheck2">ABS</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3" name="Parking_sensor">
+                                        <label class="custom-control-label" for="customCheck3">Parking Sensors</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4" name="Stearing_controls">
+                                        <label class="custom-control-label" for="customCheck4">Steering mounted controls</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-3 mb-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck5" name="Sunroof">
+                                        <label class="custom-control-label" for="customCheck5">Sunroof</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6" name="Infotainment">
+                                        <label class="custom-control-label" for="customCheck6">Infotainment Touch Screen</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck7" name="Rear_wiper">
+                                        <label class="custom-control-label" for="customCheck7">Rear Wiper</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="text-center">
+                                <button class="btn btn-primary btn-lg" type="submit">Predict Price</button>
+                            </div>
+
+                        </form>
+
+                       
+
+                    </div>
+                </div>
+                <!--Result-->
+                <br><br>
+        {% block content %}{% endblock %}   
+        {%if post==1%}
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title mb-4">
+                            <h4 class="title">{{message}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {%endif%}
+            </div>
+             
+             
+        </section>
+        <!-- Application End -->
+
+        
+    
+
+        <!-- Tech stack Start -->
+        <section class="section" id="credit">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title mb-4">
+                            <h4 class="title">Tech Stack</h4>
+                        </div>
+                        <p class="text-muted">I have used the following python libraries and frameworks</p>
+
+                        <ul class="list-unstyled mb-0 mt-4 credit-links">
+                            <li><i class="mdi mdi-code-braces text-success mr-2"></i>
+                                <a href="https://pandas.pydata.org/" rel="nofollow" class="text-dark" target="_blank"> <b>Pandas</b></a> used for data analysis and associated manipulation of tabular data</li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="https://numpy.org/" rel="nofollow" class="text-dark" target="_blank">Numpy</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="https://materialdesignicons.com/" rel="nofollow" class="text-dark" target="_blank">Matplotlib</a> / <a href="https://materialdesignicons.com/" rel="nofollow" class="text-dark"
+                                    target="_blank">Seaborn</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="https://materialdesignicons.com/" rel="nofollow" class="text-dark" target="_blank">Scikit Learn</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="http://owlgraphic.com/owlcarousel/" rel="nofollow" class="text-dark" target="_blank">Flask</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="http://srobbin.com/jquery-plugins/backstretch/" rel="nofollow" class="text-dark" target="_blank">FastAPI</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="www.mattboldt.com" rel="nofollow" class="text-dark" target="_blank">HTML</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="https://github.com/peachananr/simple-text-rotator" rel="nofollow" class="text-dark" target="_blank">CSS</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="http://hmongouachon.com" rel="nofollow" class="text-dark" target="_blank">Heroku</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="https://pupunzi.com/#mb.components/mb.YTPlayer/YTPlayer.html" rel="nofollow" class="text-dark" target="_blank">YT Player JS</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="https://github.com/sirxemic/jquery.ripples" rel="nofollow" class="text-dark" target="_blank">Ripple JS</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="http://opensource.org/licenses/MIT" rel="nofollow" class="text-dark" target="_blank">Particles JS</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="https://github.com/thesmart/jquery-scrollspy" rel="nofollow" class="text-dark" target="_blank">Scrollspy JS</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="http://isotope.metafizzy.co" rel="nofollow" class="text-dark" target="_blank">Isotope</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="http://dimsemenov.com/plugins/magnific-popup/" rel="nofollow" class="text-dark" target="_blank">Magnific Popup</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="https://github.com/nk-o/jarallax" rel="nofollow" class="text-dark" target="_blank">Parallax</a></li>
+                            <li><i class="mdi mdi-arrow-right text-success mr-2"></i><a href="https://github.com/michalsnik/aos" rel="nofollow" class="text-dark" target="_blank">AOS Animation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tech stack End -->
+
+        <!-- EDA Start -->
+        <section class="section bg-light" id="structure">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title mb-4">
+                            <h4 class="title">Exploratory Data Analysis</h4>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- EDA End -->
+
+        <!-- support Start 
+        <section class="section bg-light" id="support">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title mb-4">
+                            <h4 class="title">Supports</h4>
+                        </div>
+                        <p class="text-muted">Once again thank you for your purchase. I'll be happy to answer the the questions you have related to the theme. In case if you have any suggestion or feature, request please feel free to contact me, I'll try to implement it and
+                            will release as part of future updates.</p>
+                        <p class="text-muted">If you have any questions that are beyond the scope of this documentation, please feel free to email or contact us via my page.</p>
+                        <p class="text-muted">Stay awesome</p>
+                        <h6 class="mb-0 text-primary">- Shreethemes</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+      support End -->
+
+        <!-- changelog Start
+        <section class="section" id="changelog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title mb-4">
+                            <h4 class="title">Changelog</h4>
+                        </div>
+
+                        
+                        <div class="mt-4">
+                            <p><span class="font-weight-bold text-primary">Version v1.6 </span> -<span class="text-muted"> 7th August 2020 <span class="text-white rounded h6 py-1 px-2 bg-danger">Latest</span> </span>
+                            </p>
+
+                            <ul class="list-unstyled">
+                                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>Added Dark (CSS Based) Supported Version</li>
+                            </ul>
+                        </div>
+                   
+
+
+        <div class="mt-4">
+            <p><span class="font-weight-bold text-primary">Version v1.5 </span> -<span class="text-muted"> 22nd May 2020 </span></p>
+
+            <ul class="list-unstyled">
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>Update Bootstrap to v4.5</li>
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>Added RTL (CSS Based) Supported Version</li>
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>Fixed Some Menu Issue or Responsive Issue</li>
+            </ul>
+        </div>
+
+
+        <div class="mt-4">
+            <p><span class="font-weight-bold text-primary">Version v1.4 </span> -<span class="text-muted"> 15th April, 2020</span></p>
+
+            <ul class="list-unstyled">
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>Minor Typography Changes.</li>
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>Minor design Changes.</li>
+            </ul>
+        </div>
+      
+     
+        <div class="mt-4">
+            <p><span class="font-weight-bold text-primary">Version v1.3 </span> -<span class="text-muted"> 15th January, 2020</span></p>
+
+            <ul class="list-unstyled">
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>New Added Modern(Clip) Home</li>
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>Fixed Some Responsive Issue</li>
+            </ul>
+        </div>
+    
+        <div class="mt-4">
+            <p><span class="font-weight-bold text-primary">Version v1.2 </span> -<span class="text-muted"> 26th December, 2019</span></p>
+
+            <ul class="list-unstyled">
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>Update Bootstrap to v4.4.1</li>
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>New Added Animation Home</li>
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>Fixed Some Issue In Slider Home</li>
+            </ul>
+        </div>
+   
+        <div class="mt-4">
+            <p><span class="font-weight-bold text-primary">Version v1.1 </span> -<span class="text-muted"> 16th October, 2019</span></p>
+
+            <ul class="list-unstyled">
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>Added Blog pages</li>
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>Added Portfolio pages</li>
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i>Fixed Menu or Responsive Issue</li>
+            </ul>
+        </div>
+    
+        <div class="mt-4">
+            <p><span class="font-weight-bold text-primary">Version v1.0 </span> -<span class="text-muted"> 13th September, 2019</span></p>
+
+            <ul class="list-unstyled">
+                <li class="h6"><i class="mdi mdi-arrow-right mr-2"></i> Initial Released</li>
+            </ul>
+        </div>
+   
+    </div>
+    </div>
+    </div>
+    </section>
+    changelog End -->
+
+        <!-- Thankyou Start -->
+        <section class="py-3 bg-primary">
+            <div class="container mt-lg-0 mt-2">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h5 class="text-white mb-0">Thank you !</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Thankyou End -->
+
+        <!-- Footer Start -->
+        <footer class="bg-dark py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="mb-0">© 2022 Shubham Jagtap.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="/static/js/jquery.min.js"></script>
+        <script src="/static/js/bootstrap.bundle.min.js"></script>
+        <script src="/static/js/jquery.easing.min.js"></script>
+        <script src="/static/js/scrollspy.min.js"></script>
+        <!-- Custom -->
+        <script src="/static/js/app.js"></script>
+    </div>
+</body>
+
+</html>
